@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="73dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="กรอก Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="กรอก Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/cmdregisters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="123dp"
+        android:text="ลงทะเบียน"
+        app:layout_constraintEnd_toStartOf="@+id/cmdlogins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+    <Button
+        android:id="@+id/cmdlogins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="59dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+    <Button
+        android:id="@+id/cmdback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="147dp"
+        android:text="กลับหน้าแรก"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
